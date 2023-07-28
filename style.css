@@ -43,3 +43,40 @@ a:hover {
 	- 640px
 	- 1000px
 */
+.logo {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+  gap: 2px;
+  padding: 0px;
+}
+
+@media (min-width: 640px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    flex-basis: 25%;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.logo {
+    padding-bottom: 0px;
+  }
+
+}
